@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/navbar.js';
+import 'materialize-css/dist/css/materialize.min.css';
+import Navbar from './components/navbar/navbar.js';
 
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Hola Mundo</h1>
-    </div>
+    <Navbar/>
   );
 }
 
