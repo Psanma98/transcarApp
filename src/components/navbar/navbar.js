@@ -7,7 +7,7 @@ const Navbar = () =>{
     <nav>
 
       <div class="nav-wrapper">
-
+        <a href="#!" class="brand-logo"><i class="material-icons"></i>TIENDA ONLINE</a>
         <ul class="right hide-on-med-and-down">
 
           <li>
@@ -15,9 +15,7 @@ const Navbar = () =>{
             <a href="sass.html">
 
               <i class="material-icons">
-
                 search
-
               </i>
 
             </a>
