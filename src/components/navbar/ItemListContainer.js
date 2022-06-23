@@ -1,14 +1,9 @@
-import React from "react";
+import React from 'react'
 
-const ItemListContainer = () =>{
+const ItemListContainer = ({greeting}) => {
+  return (
+    <div id='saludo'>{greeting}</div>
+  )
+}
 
-    return(
-
-        <div>
-            <h1>Frigorífico TRANSCAR DEL VALLE</h1>
-            <h2>Tienda Online</h2>
-        </div>
-    )
-};
- 
 export default ItemListContainer

@@ -1,49 +1,37 @@
-import MarketCart from "./CartWidget";
+import CartWidget from "./CartWidget";
 
-const Navbar = () =>{
+const NavBar = () =>{
 
   return (
-
     <nav>
-
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo"><i class="material-icons"></i>TIENDA ONLINE</a>
-        <ul class="right hide-on-med-and-down">
+      <div className=" red nav-wrapper">
+        <a href="#!" className="red brand-logo center-align"><i className=" material-icons "></i>TIENDA ONLINE</a>
+        <ul className=" red right hide-on-med-and-down">
 
           <li>
-
             <a href="sass.html">
-
-              <i class="material-icons">
+              <i className="material-icons">
                 search
               </i>
-
             </a>
-
           </li>
 
-          <li id="cart"><MarketCart/></li>
+          <li>
+              <CartWidget/>
+          </li>
   
           <li>
-
             <a href="mobile.html">
-
-              <i class="material-icons">
-
+              <i className="material-icons">
                 help_outline
-
               </i>
 
             </a>
-            
           </li>
-
         </ul>
-
       </div>
-
     </nav>
   );
 }
 
-export default Navbar;
+export default NavBar;

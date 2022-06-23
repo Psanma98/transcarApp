@@ -1,17 +1,13 @@
-import React from "react";
 
-const MarketCart = () =>{
-    return (
-        <li id="marketCart">
-            <a href="../../public/index.html">
-                <i class="material-icons"  >
-                        shopping_cart
-                </i> 
-            </a>
-        </li>
-    
+const CartWidget = () =>{
+    return(
+        
+        <a href="#idModal" className="btn modal-trigger red z-depth-0">
+            <i className="material-icons">shopping_cart</i>
+        </a>
     )
-};
+    }
 
-export default MarketCart
+    
+export default CartWidget
 
