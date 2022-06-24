@@ -1,10 +1,8 @@
 
 const CartWidget = () =>{
     return(
+        <i className="material-icons">shopping_cart</i>
         
-        <a href="#idModal" className="btn modal-trigger red z-depth-0">
-            <i className="material-icons">shopping_cart</i>
-        </a>
     )
     }
 
