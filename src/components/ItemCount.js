@@ -58,16 +58,21 @@ export const ItemCount = ({stock, initial, onAdd}) =>{
 
     return(
         <>
-            <div>Unidades agregadas al carrito: -stock disponible {stock} unidades-</div>
-            <div>{contador}</div>
-            <div id="btn"></div>     
-            <button id="btnAdd" className="waves-effect waves-light btn" onClick={handlerAdd}>Agregar Unidad</button>
-            <button id="btnSus" className="waves-effect waves-light btn" onClick={handlerSustract}>Quitar Unidad</button>
-            <button id="btnRes" className="waves-effect waves-light btn" onClick={handlerReset}>Vaciar Carrito</button>
-            <button id="btnBuy" className="waves-effect waves-light btn" onClick={()=>{onAdd({contador});}}>avisar</button>
-            <section id="buy"></section>
-            
+            <div className="row">
+            <div className="z-depth-4 col s12 m6 l3 offset-l6"><span></span></div>
+                <div className="z-depth-4 col s12 m6 l3 offset-l6">
+                    <div className="right-align">Unidades agregadas al carrito: -stock disponible {stock} unidades-</div>
+                    <div>{contador}</div>
+                    <div id="btn"></div>     
+                    <button id="btnAdd" className="waves-effect waves-light btn-small" onClick={handlerAdd}>Agregar Unidad</button>
+                    <button id="btnSus" className="waves-effect waves-light btn-small" onClick={handlerSustract}>Quitar Unidad</button>
+                    <button id="btnRes" className="waves-effect waves-light btn-small " onClick={handlerReset}>Vaciar Carrito</button>
+                    <button id="btnBuy" className="waves-effect waves-light btn-small" onClick={()=>{onAdd({contador});}}>avisar</button>
+                    <section id="buy"></section>
+                </div>
+            </div>    
         </>
+        
     )
 }
 
